@@ -1,0 +1,13 @@
+{
+  "name": "clima-proyecto",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run dev:bff\" \"npm run dev:frontend\"",
+    "dev:bff": "cd bff && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "install:all": "cd bff && npm install && cd ../frontend && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
